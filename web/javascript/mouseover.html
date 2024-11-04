@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Display Image and Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            cursor: pointer;
+        }
+        #imageContainer {
+            display:none;
+            margin-top: 20px;
+			
+			
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    Hover over this text to see an image and more text!
+</div>
+
+<div id="imageContainer">
+    <img id="hoverImage" src="https://images.pexels.com/photos/29210046/pexels-photo-29210046/free-photo-of-close-up-of-monarch-butterfly-on-a-daisy-flower.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Placeholder Image" />
+    <p id="hoverText">This is the new text displayed on hover!</p>
+</div>
+
+<script>
+    const content = document.getElementById('content');
+    const imageContainer = document.getElementById('imageContainer');
+
+    content.addEventListener('mouseover', function() {
+        imageContainer.style.display = 'block';
+    });
+
+    content.addEventListener('mouseout', function() {
+        imageContainer.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
