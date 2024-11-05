@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #demo {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body id="demo">
+    <h1>HELLO</h1>
+    <button type="button" onclick="changeBackground()">Try it</button>
+
+    <script>
+        let colors = ['pink', 'lightblue', 'lightgreen', 'yellow', 'lightcoral'];
+        let currentIndex = 0;
+
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % colors.length;
+            document.getElementById('demo').style.backgroundColor = colors[currentIndex];
+        }
+    </script>
+</body>
+</html>
