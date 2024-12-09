@@ -1,13 +1,18 @@
 <?php
 	$a=array("Akhila","Sneha","Shifana");
-	print "sorted array";
+	print " array of student";
+	echo "<br>";
+	print_r($a);
+	echo"<br><br><br>";
+	print "sorted array of student";//ascending
+	
 	echo "<br>";
 	asort($a);
 	print_r($a);
-	echo "<br>";
-	print "sorted array-descending";
+	echo"<br><br><br>";
+	print "unsorted array of student";//descending
 	echo "<br>";
 	arsort($a);
 	print_r($a);
-	echo "<br>";
+	
 ?>
