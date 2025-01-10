@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Sign UP</title>
+    <style>
+          .h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .form-wrapper {
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 100vh;       
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+	 .error {
+      color: red;
+      font-size: 12px;
+    }
+
+
+    </style>
+</head>
+<body>
+
+<div class="form-wrapper">
+    <div class="form-container">
+        <h2 style="text-align: center;">Sign UP</h2>
+        
+        <form id="registrationForm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <span class="error" id="firstNameError"></span><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br>
+            <span class="error" id="lastNameError"></span><br>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <span class="error" id="usernameError"></span><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <span class="error" id="passwordError"></span><br>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+            <span class="error" id="confirmPasswordError"></span><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <span class="error" id="addressError"></span><br>
+
+            <label for="mobile">Mobile:</label><br>
+            <input type="text" id="mobile" name="mobile"><br>
+            <span class="error" id="mobileError"></span><br>
+
+            <!-- Gender Section -->
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male" id="male"> Male
+            <input type="radio" name="gender" value="female" id="female"> Female
+            <input type="radio" name="gender" value="other" id="other"> Other<br>
+            <span class="error" id="genderError"></span><br><br>
+
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span class="error" id="emailError"></span><br>
+
+            <button type="button" onclick="validateForm()">Register</button><br>
+        </form>
+    </div>
+</div>
+
+<script src="validation.js"></script>
+
+</body>
+</html>
